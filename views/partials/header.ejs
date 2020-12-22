@@ -1,0 +1,18 @@
+<% for(doc of doc)   { %>
+<div class="container mt-5  d-flex justify-content-center">
+    <div class="row">
+    
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title badge badge-success d-flex justify-content-center"></h5>
+              <h5 class="card-title">🤫🤫🤫 <%=  doc.titre_poster %></h5>
+              <p class="card-text">👉 <%=  doc.blog_poster.slice(0, 80)  %>...</p>
+              <a target="_blank" href="/readMore/<%=  doc.id %>" class="btn btn-info">Read More</a>
+              <a  href="/delete/<%=  doc.id %>" class="btn btn-danger">Supprimer</a>
+              <a  target="blank" href="/update/<%=  doc.id %>" class="btn btn-warning">modifier</a>
+            </div>
+        </div>
+    </div>
+</div>
+<% }    %>
+
